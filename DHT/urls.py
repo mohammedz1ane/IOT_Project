@@ -4,8 +4,8 @@ from . import api
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path("api",api.Dlist,name='json'),
-    path("api/post",api.Dlist,name='json'),
+    path("api/",api.Dlist,name='json'),
+    path("api/post/",api.Dlist,name='json'),
     path('download_csv/', views.download_csv, name='download_csv'),
     path('index/',views.table,name='table'),
     path('myChartTemp/',views.graphiqueTemp,name='myChartTemp'),
